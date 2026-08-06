@@ -85,30 +85,49 @@
             <p>Prayer Micelle（以下「当方」）は、モバイルゲーム「Rust Axion」（以下「本アプリ」）におけるユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリが収集するデータの種類、利用目的、および第三者との共有について説明します。</p>
 
             <h2>2. 収集するデータ</h2>
-            <p>本アプリは、以下のデータを自動的に収集する場合があります。</p>
+            <p>本アプリは、以下のデータを収集し、ゲームサーバー（Microsoft Azure PlayFab）に保存します。</p>
             <ul>
-                <li><strong>広告識別子</strong>（Google Advertising ID）: 広告の配信および効果測定のため</li>
+                <li><strong>ゲームの進行データ</strong>（セーブデータ）: 端末の故障・紛失・機種変更に備えたバックアップ、および複数端末での引き継ぎのため</li>
+                <li><strong>プレイヤー名および成績</strong>: ゲーム内ランキングの表示のため。<strong>プレイヤー名は他のユーザーにも表示されます</strong></li>
+                <li><strong>引き継ぎ用のID・パスワード</strong>: ユーザーが引き継ぎ機能を利用した場合に限り保存されます</li>
+                <li><strong>購入情報</strong>（アプリ内課金のレシート）: 購入内容の検証および反映のため</li>
+                <li><strong>プレイヤー識別子</strong>: 端末ごとに自動生成される匿名の識別子です</li>
+            </ul>
+            <p>また、以下のデータを自動的に収集する場合があります。</p>
+            <ul>
+                <li><strong>広告識別子</strong>（Android: Google Advertising ID / iOS: IDFA）: 広告の配信および効果測定のため</li>
                 <li><strong>端末情報</strong>（OS バージョン、デバイスモデル、言語設定など）: アプリの動作最適化および不具合分析のため</li>
                 <li><strong>アプリ利用データ</strong>（広告の表示・クリック情報）: 広告パフォーマンスの分析のため</li>
             </ul>
-            <p>本アプリは、ユーザーの氏名、メールアドレス、位置情報などの個人を直接特定できる情報を収集しません。</p>
+            <p>本アプリは、アカウント登録を必要とせず、氏名・メールアドレス・電話番号・位置情報などの個人情報の入力を求めることはありません。ただし、<strong>プレイヤー名はユーザーが自由に入力できるため、本名など個人を特定しうる情報を入力しないようご注意ください</strong>（プレイヤー名はランキングで公開されます）。</p>
 
             <h2>3. データの利用目的</h2>
             <ul>
+                <li>ゲームの進行状況の保存および復元</li>
+                <li>ゲーム内ランキングの表示</li>
+                <li>アプリ内課金の検証および反映</li>
                 <li>広告の配信（リワード広告を含む）</li>
                 <li>アプリの改善および不具合の修正</li>
                 <li>アプリの利用状況の分析</li>
+                <li>不正行為の検出および対応</li>
             </ul>
 
             <h2>4. 第三者サービス</h2>
-            <p>本アプリは、広告配信のために以下の第三者サービスを利用しています。これらのサービスは、独自のプライバシーポリシーに基づいてデータを収集・処理します。</p>
+            <p>本アプリは以下の第三者サービスを利用しています。これらのサービスは、独自のプライバシーポリシーに基づいてデータを収集・処理します。</p>
             <ul>
-                <li><strong>Unity LevelPlay (ironSource)</strong>: <a href="https://www.is.com/privacy-policy/" target="_blank">プライバシーポリシー</a></li>
-                <li><strong>Unity Ads</strong>: <a href="https://unity.com/legal/privacy-policy" target="_blank">プライバシーポリシー</a></li>
+                <li><strong>Microsoft Azure PlayFab</strong>（ゲームサーバー・セーブデータの保存・ランキング）: <a href="https://privacy.microsoft.com/privacystatement" target="_blank">プライバシーポリシー</a></li>
+                <li><strong>Unity LevelPlay (ironSource)</strong>（広告配信）: <a href="https://www.is.com/privacy-policy/" target="_blank">プライバシーポリシー</a></li>
+                <li><strong>Unity Ads</strong>（広告配信）: <a href="https://unity.com/legal/privacy-policy" target="_blank">プライバシーポリシー</a></li>
+                <li><strong>Apple</strong>（App Store でのアプリ内課金）: <a href="https://www.apple.com/legal/privacy/" target="_blank">プライバシーポリシー</a></li>
+                <li><strong>Google</strong>（Google Play でのアプリ内課金）: <a href="https://policies.google.com/privacy" target="_blank">プライバシーポリシー</a></li>
             </ul>
 
             <h2>5. データの保存と安全性</h2>
-            <p>ゲームの進行データは、ユーザーの端末内にローカル保存されます。当方のサーバーにユーザーデータを送信・保存することはありません。第三者サービスによるデータの取り扱いについては、各サービスのプライバシーポリシーをご確認ください。</p>
+            <p>ゲームの進行データは、ユーザーの端末内に保存されるとともに、バックアップおよび引き継ぎのためゲームサーバー（Microsoft Azure PlayFab）にも保存されます。端末内のセーブデータは暗号化して保存されます。</p>
+            <p>サーバーとの通信はすべて暗号化（HTTPS）されています。データはサービスの提供に必要な期間、保存されます。</p>
+
+            <h2>5-2. iOS におけるトラッキングの許可について</h2>
+            <p>iOS 版では、初回起動時に広告識別子（IDFA）の利用許可を求めるダイアログが表示されます。<strong>許可を拒否した場合でも、本アプリは通常どおりご利用いただけます</strong>（表示される広告がユーザーの興味に基づいたものではなくなります）。この設定は、iOS の「設定」→「プライバシーとセキュリティ」→「トラッキング」からいつでも変更できます。</p>
 
             <h2>6. 子どものプライバシー</h2>
             <p>本アプリは13歳未満の児童を対象としていません。13歳未満のお子様が本アプリを利用していることが判明した場合、該当するデータの削除に努めます。</p>
@@ -116,7 +135,8 @@
             <h2>7. ユーザーの権利</h2>
             <ul>
                 <li>広告識別子は、端末の設定からリセットまたは無効化できます</li>
-                <li>データの削除を希望される場合は、下記の連絡先までお問い合わせください</li>
+                <li>iOS では、トラッキングの許可をいつでも取り消すことができます</li>
+                <li>保存されているデータの開示・訂正・削除を希望される場合は、下記の連絡先までお問い合わせください</li>
             </ul>
 
             <h2>8. ポリシーの変更</h2>
@@ -136,30 +156,49 @@
             <p>Prayer Micelle ("we", "us") respects user privacy in the mobile game "Rust Axion" ("the App") and is committed to protecting personal information. This Privacy Policy explains the types of data the App collects, how it is used, and how it is shared with third parties.</p>
 
             <h2>2. Data We Collect</h2>
-            <p>The App may automatically collect the following data:</p>
+            <p>The App collects the following data and stores it on our game server (Microsoft Azure PlayFab):</p>
             <ul>
-                <li><strong>Advertising Identifier</strong> (Google Advertising ID): For ad delivery and measurement</li>
+                <li><strong>Game Progress Data</strong> (save data): To provide a backup in case of device loss, failure, or replacement, and to allow transfer between devices</li>
+                <li><strong>Player Name and Scores</strong>: To display in-game leaderboards. <strong>Your player name is visible to other users</strong></li>
+                <li><strong>Transfer ID and Password</strong>: Stored only if you choose to use the data transfer feature</li>
+                <li><strong>Purchase Information</strong> (in-app purchase receipts): To validate and fulfill purchases</li>
+                <li><strong>Player Identifier</strong>: An anonymous identifier generated automatically per device</li>
+            </ul>
+            <p>The App may also automatically collect the following data:</p>
+            <ul>
+                <li><strong>Advertising Identifier</strong> (Android: Google Advertising ID / iOS: IDFA): For ad delivery and measurement</li>
                 <li><strong>Device Information</strong> (OS version, device model, language settings, etc.): For app optimization and bug analysis</li>
                 <li><strong>App Usage Data</strong> (ad impressions and clicks): For ad performance analysis</li>
             </ul>
-            <p>The App does not collect personally identifiable information such as names, email addresses, or location data.</p>
+            <p>The App does not require account registration and never asks for your name, email address, phone number, or location. However, <strong>the player name is freely chosen by the user, so please avoid entering your real name or any information that could identify you</strong> (player names are shown publicly on leaderboards).</p>
 
             <h2>3. How We Use Data</h2>
             <ul>
+                <li>Saving and restoring game progress</li>
+                <li>Displaying in-game leaderboards</li>
+                <li>Validating and fulfilling in-app purchases</li>
                 <li>Serving advertisements (including rewarded ads)</li>
                 <li>Improving the App and fixing bugs</li>
                 <li>Analyzing app usage</li>
+                <li>Detecting and responding to fraudulent activity</li>
             </ul>
 
             <h2>4. Third-Party Services</h2>
-            <p>The App uses the following third-party services for ad delivery. These services collect and process data according to their own privacy policies:</p>
+            <p>The App uses the following third-party services. These services collect and process data according to their own privacy policies:</p>
             <ul>
-                <li><strong>Unity LevelPlay (ironSource)</strong>: <a href="https://www.is.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
-                <li><strong>Unity Ads</strong>: <a href="https://unity.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+                <li><strong>Microsoft Azure PlayFab</strong> (game server, save data storage, leaderboards): <a href="https://privacy.microsoft.com/privacystatement" target="_blank">Privacy Policy</a></li>
+                <li><strong>Unity LevelPlay (ironSource)</strong> (advertising): <a href="https://www.is.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+                <li><strong>Unity Ads</strong> (advertising): <a href="https://unity.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+                <li><strong>Apple</strong> (in-app purchases on the App Store): <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a></li>
+                <li><strong>Google</strong> (in-app purchases on Google Play): <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
             </ul>
 
             <h2>5. Data Storage and Security</h2>
-            <p>Game progress data is stored locally on the user's device. We do not transmit or store user data on our servers. For data handling by third-party services, please refer to their respective privacy policies.</p>
+            <p>Game progress data is stored on your device and is also stored on our game server (Microsoft Azure PlayFab) for backup and transfer purposes. Save data on the device is stored in encrypted form.</p>
+            <p>All communication with the server is encrypted using HTTPS. Data is retained for as long as necessary to provide the service.</p>
+
+            <h2>5-2. App Tracking Transparency on iOS</h2>
+            <p>On iOS, the App shows a dialog on first launch asking for permission to use the advertising identifier (IDFA). <strong>The App works normally if you decline</strong> (ads shown will simply not be tailored to your interests). You can change this at any time in iOS Settings → Privacy &amp; Security → Tracking.</p>
 
             <h2>6. Children's Privacy</h2>
             <p>The App is not intended for children under the age of 13. If we become aware that a child under 13 is using the App, we will make efforts to delete the relevant data.</p>
@@ -167,7 +206,8 @@
             <h2>7. User Rights</h2>
             <ul>
                 <li>You can reset or disable the advertising identifier in your device settings</li>
-                <li>If you wish to request data deletion, please contact us using the information below</li>
+                <li>On iOS, you can withdraw tracking permission at any time</li>
+                <li>If you wish to access, correct, or delete the data we hold, please contact us using the information below</li>
             </ul>
 
             <h2>8. Changes to This Policy</h2>
@@ -179,7 +219,7 @@
         </div>
 
         <p class="updated">
-            Last updated: March 14, 2026<br>
+            Last updated: August 6, 2026<br>
             <a href="./tokushoho.html">特定商取引法に基づく表示</a>
         </p>
     </div>
