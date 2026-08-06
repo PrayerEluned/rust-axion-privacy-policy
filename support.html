@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Axion - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background-color: #1a1a2e;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #16213e;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: #e94560;
+            margin-bottom: 0.5rem;
+        }
+        .app-name {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            background: #e94560;
+            color: #fff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        p, li {
+            margin-bottom: 0.6rem;
+            font-size: 0.95rem;
+        }
+        ul, ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        a { color: #e94560; }
+        .contact {
+            background: #0f3460;
+            border-radius: 8px;
+            padding: 1.2rem 1.4rem;
+            margin: 1rem 0;
+        }
+        .contact .mail {
+            font-size: 1.05rem;
+            word-break: break-all;
+        }
+        .updated {
+            text-align: right;
+            color: #666;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+            border-top: 1px solid #2a2a4a;
+            padding-top: 1rem;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 1.5rem;
+        }
+        .lang-switch a {
+            color: #e94560;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .en { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a onclick="toggleLang()">English / 日本語</a>
+        </div>
+
+        <!-- 日本語版 -->
+        <div class="ja">
+            <h1>サポート</h1>
+            <p class="app-name">Rust Axion（com.prayermicelle.rustaxion）</p>
+
+            <h2>お問い合わせ</h2>
+            <p>ご質問・不具合のご報告・データの削除依頼は、下記までご連絡ください。</p>
+            <div class="contact">
+                <p class="mail"><strong>E-mail</strong>: <a href="mailto:eluned.72.steam@gmail.com">eluned.72.steam@gmail.com</a></p>
+                <p style="margin-bottom:0; color:#aaa; font-size:0.9rem;">個人で開発・運営しているため、返信までお時間をいただく場合があります。</p>
+            </div>
+
+            <h2>不具合を報告いただく場合</h2>
+            <p>次の内容を添えていただけると、原因の特定が早くなります。</p>
+            <ul>
+                <li>ご利用の端末（例: iPhone 15 Pro / iPad Air 第5世代）</li>
+                <li>OS のバージョン（設定 → 一般 → 情報 で確認できます）</li>
+                <li>どの画面で、何をしたときに起きたか</li>
+                <li>スクリーンショット（あれば）</li>
+            </ul>
+
+            <h2>データの引き継ぎ</h2>
+            <p>機種変更や、Android 版から iOS 版へ移る場合の手順です。</p>
+            <ol>
+                <li>これまで遊んでいた端末のアプリで、引き継ぎID とパスワードを発行します</li>
+                <li>発行された ID とパスワードを控えます</li>
+                <li>新しい端末でアプリを起動し、タイトル画面から入力します</li>
+            </ol>
+            <p><strong>引き継ぎID とパスワードは、必ず控えてから機種変更してください。</strong> 発行前に端末を初期化された場合、データを復元できないことがあります。</p>
+            <p>Android 版と iOS 版は別のアカウントとして扱われます。同時に両方で遊ぶことはできません。</p>
+
+            <h2>購入したのに反映されない場合</h2>
+            <p>購入内容の確認はサーバー経由で行うため、反映まで数秒かかります。それでも反映されない場合は、以下をお試しください。</p>
+            <ul>
+                <li>通信状況の良い場所でアプリを再起動する</li>
+                <li>それでも反映されない場合は、購入日時と商品名を添えてご連絡ください</li>
+            </ul>
+
+            <h2>データの削除をご希望の場合</h2>
+            <p>保存されているデータの削除をご希望の場合は、上記メールアドレスまでご連絡ください。ご本人確認のうえ、対応いたします。</p>
+            <p>削除すると、購入いただいたゲーム内通貨を含め、すべてのデータが失われます。復元はできません。</p>
+
+            <h2>関連ページ</h2>
+            <ul>
+                <li><a href="./index.html">プライバシーポリシー</a></li>
+                <li><a href="./tokushoho.html">特定商取引法に基づく表示</a></li>
+            </ul>
+        </div>
+
+        <!-- English -->
+        <div class="en">
+            <h1>Support</h1>
+            <p class="app-name">Rust Axion (com.prayermicelle.rustaxion)</p>
+
+            <h2>Contact</h2>
+            <p>For questions, bug reports, or data deletion requests, please contact us at:</p>
+            <div class="contact">
+                <p class="mail"><strong>E-mail</strong>: <a href="mailto:eluned.72.steam@gmail.com">eluned.72.steam@gmail.com</a></p>
+                <p style="margin-bottom:0; color:#aaa; font-size:0.9rem;">This app is developed and operated by an individual, so replies may take some time.</p>
+            </div>
+
+            <h2>Reporting a Bug</h2>
+            <p>Including the following helps us identify the cause faster:</p>
+            <ul>
+                <li>Your device (e.g. iPhone 15 Pro / iPad Air 5th gen)</li>
+                <li>OS version (Settings → General → About)</li>
+                <li>Which screen you were on, and what you did</li>
+                <li>A screenshot, if available</li>
+            </ul>
+
+            <h2>Transferring Your Data</h2>
+            <p>To move your data to a new device, or from Android to iOS:</p>
+            <ol>
+                <li>On your current device, issue a transfer ID and password in the app</li>
+                <li>Write down the ID and password</li>
+                <li>Launch the app on the new device and enter them from the title screen</li>
+            </ol>
+            <p><strong>Please issue and record the transfer ID and password before changing devices.</strong> If the device is reset beforehand, the data may not be recoverable.</p>
+            <p>The Android and iOS versions are treated as separate accounts and cannot be played simultaneously.</p>
+
+            <h2>Purchase Not Reflected</h2>
+            <p>Purchases are validated on our server, so it takes a few seconds for the currency to appear. If it still doesn't:</p>
+            <ul>
+                <li>Restart the app where you have a stable connection</li>
+                <li>If it still doesn't appear, contact us with the date, time, and product name</li>
+            </ul>
+
+            <h2>Data Deletion Requests</h2>
+            <p>To request deletion of your stored data, please contact us at the address above. We will verify your identity and proceed.</p>
+            <p>Deletion removes all data, including any in-game currency you purchased. This cannot be undone.</p>
+
+            <h2>Related Pages</h2>
+            <ul>
+                <li><a href="./index.html">Privacy Policy</a></li>
+                <li><a href="./tokushoho.html">Notation based on the Act on Specified Commercial Transactions (Japanese)</a></li>
+            </ul>
+        </div>
+
+        <p class="updated">
+            Last updated: August 6, 2026
+        </p>
+    </div>
+
+    <script>
+        function toggleLang() {
+            const ja = document.querySelector('.ja');
+            const en = document.querySelector('.en');
+            if (ja.style.display === 'none') {
+                ja.style.display = 'block';
+                en.style.display = 'none';
+            } else {
+                ja.style.display = 'none';
+                en.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
